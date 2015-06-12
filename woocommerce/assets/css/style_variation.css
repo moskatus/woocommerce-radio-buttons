@@ -1,0 +1,71 @@
+.variation_attributes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  
+  }
+.variation_attributes input{
+    display: none;
+}
+.mobile-theme .variation_attributes input#pa_cor{
+	display:block;
+          position: absolute;
+         opacity:0;
+         width: 100%;
+         height: 100%;
+
+}
+
+.variation_attributes + .variation_attributes {
+  margin-left: 25px;
+}
+.variation_attributes label {
+  background: #fff no-repeat center center;
+  bottom: 1px;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  left: 1px;
+  position: absolute;
+  right: 1px;
+  text-indent: 100%;
+  top: 1px;
+  white-space: nowrap;
+}
+.variation_attributes img {
+  background: #fff no-repeat center center;
+  bottom: 1px;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  left: 1px;
+  right: 1px;
+  text-indent: 100%;
+  top: 1px;
+  white-space: nowrap;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+}
+.variation_attributes input:focus + img {
+  outline: 2px dotted #21b4d0;
+}
+.variation_attributes input:focus + span {
+  outline: 2px dotted #21b4d0;
+}
+.variation_attributes input:checked + img {
+  outline: 4px solid #0172b4;
+  
+}
+.variation_attributes input:checked + span {
+  outline: 4px solid #0172b4;
+  padding:2px;
+}
